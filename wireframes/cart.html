@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 1rem;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        /* Cart Layout */
+        .cart-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        /* Cart Items */
+        .cart-items {
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .cart-item {
+            display: grid;
+            grid-template-columns: 100px 2fr 1fr 1fr auto;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+        .item-image {
+            width: 100px;
+            height: 100px;
+            background: #f4f4f4;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .quantity-control button {
+            padding: 0.25rem 0.5rem;
+        }
+        /* Checkout Summary */
+        .checkout-summary {
+            background: #f4f4f4;
+            padding: 1rem;
+            position: sticky;
+            top: 2rem;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+        .checkout-button {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>Logo</li>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Cart</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="cart-layout">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">[Image]</div>
+                    <div class="item-details">
+                        <h3>Product Name</h3>
+                        <p>Product Description</p>
+                    </div>
+                    <div class="quantity-control">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                    <div class="item-price">$99.99</div>
+                    <button class="remove-item">×</button>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">[Image]</div>
+                    <div class="item-details">
+                        <h3>Product Name</h3>
+                        <p>Product Description</p>
+                    </div>
+                    <div class="quantity-control">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                    <div class="item-price">$149.99</div>
+                    <button class="remove-item">×</button>
+                </div>
+            </div>
+
+            <div class="checkout-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$249.98</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>$10.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>$25.00</span>
+                </div>
+                <div class="summary-row">
+                    <strong>Total</strong>
+                    <strong>$284.98</strong>
+                </div>
+                <button class="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: monospace;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px dashed #999;
+        }
+        /* Navigation */
+        nav {
+            border: 2px solid #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            border: 1px dashed #999;
+            padding: 1rem;
+        }
+        nav li {
+            border: 1px solid #333;
+            padding: 0.5rem 1rem;
+        }
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+            padding: 2rem 0;
+            border: 2px solid #333;
+        }
+        /* Filters */
+        .filters {
+            border: 1px solid #333;
+            padding: 1rem;
+        }
+        .filter-section {
+            margin-bottom: 1rem;
+            border: 1px dashed #999;
+            padding: 1rem;
+        }
+        .filter-section h3 {
+            border-bottom: 1px dashed #999;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem;
+        }
+        .product-card {
+            border: 1px solid #333;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        .product-card::before {
+            content: "X";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #999;
+        }
+        /* Wireframe Elements */
+        .wireframe-box {
+            border: 1px solid #333;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        .wireframe-line {
+            border-top: 1px dashed #999;
+            margin: 1rem 0;
+        }
+        .wireframe-circle {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            border-radius: 50%;
+            margin: 1rem auto;
+        }
+        /* Footer */
+        footer {
+            border: 2px solid #333;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>[Logo]</li>
+                <li>[Home]</li>
+                <li>[Products]</li>
+                <li>[About]</li>
+                <li>[Contact]</li>
+                <li>[Cart]</li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <aside class="filters">
+                <div class="filter-section">
+                    <h3>[Categories]</h3>
+                    <div class="wireframe-box">[Category 1]</div>
+                    <div class="wireframe-box">[Category 2]</div>
+                    <div class="wireframe-box">[Category 3]</div>
+                </div>
+                <div class="filter-section">
+                    <h3>[Price Range]</h3>
+                    <div class="wireframe-box">[Slider]</div>
+                </div>
+                <div class="filter-section">
+                    <h3>[Sort By]</h3>
+                    <div class="wireframe-box">[Dropdown]</div>
+                </div>
+            </aside>
+
+            <main class="products-grid">
+                <div class="product-card">
+                    <div class="wireframe-circle"></div>
+                    <div class="wireframe-box">[Product 1]</div>
+                    <div class="wireframe-line"></div>
+                    <div class="wireframe-box">[Price]</div>
+                    <div class="wireframe-box">[Add to Cart]</div>
+                </div>
+                <div class="product-card">
+                    <div class="wireframe-circle"></div>
+                    <div class="wireframe-box">[Product 2]</div>
+                    <div class="wireframe-line"></div>
+                    <div class="wireframe-box">[Price]</div>
+                    <div class="wireframe-box">[Add to Cart]</div>
+                </div>
+                <div class="product-card">
+                    <div class="wireframe-circle"></div>
+                    <div class="wireframe-box">[Product 3]</div>
+                    <div class="wireframe-line"></div>
+                    <div class="wireframe-box">[Price]</div>
+                    <div class="wireframe-box">[Add to Cart]</div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="wireframe-box">
+                <div class="wireframe-line"></div>
+                <p>[Footer Content]</p>
+                <div class="wireframe-line"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
